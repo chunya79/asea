@@ -292,6 +292,7 @@ section { padding: 80px 0; }
   position: absolute;
   inset: 0;
   z-index: 0;
+  clip-path: inset(10% 0);
 }
 .hero-video-wrap iframe {
   position: absolute;
@@ -301,7 +302,7 @@ section { padding: 80px 0; }
   height: 100vh;
   min-width: 100%;
   min-height: 56.25vw;
-  transform: translate(-50%, -50%) scale(1.18);
+  transform: translate(-50%, -50%) scaleY(1.25);
   pointer-events: none;
 }
 .hero-video-wrap::after {
