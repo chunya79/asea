@@ -297,10 +297,10 @@ section { padding: 80px 0; }
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 120vw;
-  height: 67.5vw; /* 16:9 × 1.2 to bleed past edges */
-  min-height: 120%;
-  min-width: 213.33vh;
+  width: 177.78vh; /* always wider than 16:9 viewport */
+  height: 100vh;
+  min-width: 100%;
+  min-height: 56.25vw;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
@@ -308,7 +308,7 @@ section { padding: 80px 0; }
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(5,15,30,0.75) 0%, rgba(5,15,30,0.15) 60%, transparent 100%);
+  background: rgba(5,15,30,0.35);
 }
 
 /* Text sits centred over the video */
