@@ -6,101 +6,43 @@
   <title>The Science of Redox – ASEA | Renee Swain</title>
   <meta name="description" content="Discover the breakthrough science behind ASEA's redox signalling technology — the only patented process to create and stabilise life-giving redox molecules outside the body." />
   <link rel="stylesheet" href="css/styles.css" />
-  <style>
-    .redox-explainer {
-      background: var(--color-light);
-      text-align: center;
-      padding: 96px 24px;
-    }
-    .redox-explainer-inner { max-width: 800px; margin: 0 auto; }
-    .redox-explainer h2 { margin-bottom: 20px; }
-    .redox-explainer p { color: var(--color-text-muted); line-height: 1.8; margin-bottom: 16px; }
-
-    .stats-row {
-      background: var(--color-primary);
-      padding: 64px 24px;
-    }
-    .stats-row-inner {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-      text-align: center;
-    }
-    .stats-row .stat-number { font-size: 2.8rem; }
-    .stats-row .stat-label { color: rgba(255,255,255,0.6); }
-
-    .quote-block {
-      background: var(--color-white);
-      padding: 96px 24px;
-      text-align: center;
-    }
-    .quote-inner {
-      max-width: 720px;
-      margin: 0 auto;
-    }
-    blockquote {
-      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
-      font-weight: 600;
-      color: var(--color-primary);
-      line-height: 1.5;
-      font-style: italic;
-      margin-bottom: 20px;
-    }
-    blockquote::before { content: '\201C'; }
-    blockquote::after  { content: '\201D'; }
-    cite { font-size: 0.9rem; color: var(--color-text-muted); font-style: normal; }
-
-    @media (max-width: 768px) {
-      .stats-row-inner { grid-template-columns: 1fr 1fr; }
-    }
-    @media (max-width: 480px) {
-      .stats-row-inner { grid-template-columns: 1fr; }
-    }
-  </style>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 </head>
 <body>
 
 <!-- ── HEADER ── -->
 <header>
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo" aria-label="ASEA Home">
-      <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <text x="0" y="30" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="#180D43" letter-spacing="-1">ASEA</text>
-      </svg>
-    </a>
-    <nav aria-label="Main navigation">
+    <a href="index.html" class="nav-logo"><img src="assets/asea-logo.svg" alt="ASEA" /></a>
+    <nav aria-label="Primary">
       <ul class="nav-links">
         <li>
-          <button class="nav-btn-link" aria-haspopup="true" aria-expanded="false">
-            Wellness
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">
+            Wellness <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
           </button>
-          <div class="dropdown" role="menu">
-            <a href="products.html#redox-gold" role="menuitem">REDOXGold™</a>
-            <a href="products.html#asea-drink" role="menuitem">ASEA REDOX Drink</a>
-            <a href="products.html#renu28" role="menuitem">RENU28 Redox Gel</a>
-            <a href="products.html#renuadvanced" role="menuitem">RENUAdvanced Skin Care</a>
-            <a href="products.html" role="menuitem" style="color:var(--color-accent);font-weight:600;">View all products →</a>
+          <div class="dropdown">
+            <a href="products.html#redox-gold"><i data-lucide="sparkles" style="width:15px;height:15px;color:var(--asea-blue)"></i>REDOXGold™</a>
+            <a href="products.html#asea-drink"><i data-lucide="droplets" style="width:15px;height:15px;color:var(--asea-blue)"></i>ASEA REDOX Drink</a>
+            <a href="products.html#renu28"><i data-lucide="leaf" style="width:15px;height:15px;color:var(--asea-blue)"></i>RENU28 Redox Gel</a>
+            <a href="products.html#renuadvanced"><i data-lucide="flower-2" style="width:15px;height:15px;color:var(--asea-blue)"></i>RENUAdvanced Skin Care</a>
+            <a href="products.html" style="color:var(--asea-blue);font-weight:500;"><i data-lucide="arrow-right" style="width:15px;height:15px;"></i>View all products</a>
           </div>
         </li>
         <li>
-          <button class="nav-btn-link" aria-haspopup="true" aria-expanded="false">
-            Science
-            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <button class="nav-trigger" aria-haspopup="true" aria-expanded="false">
+            Science <i data-lucide="chevron-down" style="width:14px;height:14px;"></i>
           </button>
-          <div class="dropdown" role="menu">
-            <a href="#redox" role="menuitem">What is Redox?</a>
-            <a href="#research" role="menuitem">Research &amp; Studies</a>
-            <a href="#technology" role="menuitem">Our Technology</a>
+          <div class="dropdown">
+            <a href="#redox"><i data-lucide="atom" style="width:15px;height:15px;color:var(--asea-blue)"></i>What is Redox?</a>
+            <a href="#technology"><i data-lucide="flask-conical" style="width:15px;height:15px;color:var(--asea-blue)"></i>Our Technology</a>
+            <a href="#research"><i data-lucide="clipboard-list" style="width:15px;height:15px;color:var(--asea-blue)"></i>Research &amp; Studies</a>
           </div>
         </li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html" class="nav-trigger">About</a></li>
       </ul>
     </nav>
     <div class="nav-right">
-      <a href="https://office.aseaglobal.com" class="nav-office-btn" target="_blank" rel="noopener">Virtual Office</a>
+      <a href="https://office.aseaglobal.com" class="nav-office" target="_blank" rel="noopener">Virtual Office</a>
     </div>
     <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -108,19 +50,19 @@
   </div>
 </header>
 
-<nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
+<nav class="nav-mobile" id="nav-mobile">
   <div class="nav-mobile-section">
-    <div class="nav-mobile-section-title">Wellness</div>
+    <div class="nav-mobile-label">Wellness</div>
     <a href="products.html#redox-gold">REDOXGold™</a>
     <a href="products.html#asea-drink">ASEA REDOX Drink</a>
     <a href="products.html#renu28">RENU28 Redox Gel</a>
     <a href="products.html#renuadvanced">RENUAdvanced Skin Care</a>
   </div>
   <div class="nav-mobile-section">
-    <div class="nav-mobile-section-title">Science</div>
+    <div class="nav-mobile-label">Science</div>
     <a href="#redox">What is Redox?</a>
-    <a href="#research">Research &amp; Studies</a>
     <a href="#technology">Our Technology</a>
+    <a href="#research">Research &amp; Studies</a>
   </div>
   <div class="nav-mobile-section">
     <a href="about.html">About</a>
@@ -130,68 +72,58 @@
 
 <!-- ── PAGE HERO ── -->
 <div class="page-hero">
-  <p class="section-eyebrow">The Science</p>
-  <h1 class="section-title">Redox technology — a breakthrough in human wellness</h1>
-  <p class="section-sub">Redox signalling molecules are powerful messengers that direct and guide cellular function. ASEA is the only company in the world with a patented process to create and stabilise these life-giving molecules outside the body.</p>
+  <div class="container">
+    <span class="eyebrow">The Science</span>
+    <h1 class="section-title">Redox technology — a breakthrough in human wellness</h1>
+    <p class="section-sub">Redox signalling molecules are powerful messengers that direct and guide cellular function. ASEA is the only company with a patented process to create and stabilise these life-giving molecules outside the body.</p>
+  </div>
 </div>
 
-<!-- ── STATS ── -->
-<div class="stats-row">
-  <div class="stats-row-inner">
-    <div class="stat-item">
-      <div class="stat-number">16+</div>
-      <div class="stat-label">Years of research</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">30+</div>
-      <div class="stat-label">Published studies</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">34</div>
-      <div class="stat-label">Global markets</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-number">750k+</div>
-      <div class="stat-label">Lives impacted</div>
-    </div>
+<!-- ── STATS STRIP ── -->
+<div class="stats-strip">
+  <div class="stats-strip-inner">
+    <div><div class="stat-num">16+</div><div class="stat-lbl">Years of research</div></div>
+    <div><div class="stat-num">30+</div><div class="stat-lbl">Published studies</div></div>
+    <div><div class="stat-num">34</div><div class="stat-lbl">Global markets</div></div>
+    <div><div class="stat-num">750k+</div><div class="stat-lbl">Lives impacted</div></div>
   </div>
 </div>
 
 <!-- ── SCIENCE BLOCKS ── -->
-<section class="science-blocks">
+<section style="background:var(--bg);">
   <div class="container">
 
-    <div class="science-block" id="redox">
-      <div class="science-block-img" style="background: linear-gradient(135deg, #eef0ff, #dde0ff);">🔬</div>
+    <div class="science-block-grid" id="redox">
+      <div class="science-block-img">🔬</div>
       <div class="science-block-text">
-        <p class="section-eyebrow">The Fundamentals</p>
+        <span class="eyebrow">The Fundamentals</span>
         <h3>What are redox signalling molecules?</h3>
         <p>Redox signalling molecules are native to your body — created inside every cell as a natural by-product of normal cellular metabolism. They serve as vital messengers, keeping the immune system in balance and facilitating cellular repair and protection.</p>
-        <p>As we age, our cells produce fewer and fewer of these molecules. The result? A gradual decline in the body's ability to repair and protect itself at the cellular level.</p>
+        <p>As we age, our cells produce fewer of these molecules — leading to a gradual decline in the body's ability to repair and protect itself at the cellular level.</p>
         <p>ASEA products are the world's first to contain stabilised, bioactive redox signalling molecules — helping to restore and maintain this critical cellular communication.</p>
       </div>
     </div>
 
-    <div class="science-block reverse" id="technology">
-      <div class="science-block-img" style="background: linear-gradient(135deg, #e8fff4, #c0fde2);">⚗️</div>
+    <div class="science-block-grid reverse" id="technology">
+      <div class="science-block-img">⚗️</div>
       <div class="science-block-text">
-        <p class="section-eyebrow">Our Technology</p>
+        <span class="eyebrow">Our Technology</span>
         <h3>A patented process unlike anything else on earth</h3>
-        <p>ASEA's technology is the result of years of research by a team of medical professionals, engineers, and researchers. Through a patented electrochemical process, we reorganise molecules of purified water and natural salt to create a stable solution of active redox signalling molecules.</p>
+        <p>Through a patented electrochemical process, ASEA reorganises molecules of purified water and natural salt to create a stable solution of active redox signalling molecules.</p>
         <p>This process — which took over a decade to perfect — produces a solution that is gentle, non-toxic, and native to the human body. Every batch is independently tested and certified.</p>
         <p>No other company in the world has replicated this technology. ASEA holds multiple patents protecting this groundbreaking discovery.</p>
       </div>
     </div>
 
-    <div class="science-block" id="research">
-      <div class="science-block-img" style="background: linear-gradient(135deg, #fff4e8, #ffdfc0);">📋</div>
+    <div class="science-block-grid" id="research">
+      <div class="science-block-img">📋</div>
       <div class="science-block-text">
-        <p class="section-eyebrow">Research &amp; Studies</p>
+        <span class="eyebrow">Research &amp; Studies</span>
         <h3>Peer-reviewed. Independently validated. Science you can trust.</h3>
         <p>ASEA products have been the subject of over 30 published scientific studies, including research conducted by independent universities and institutions around the world.</p>
-        <p>Studies have examined the effects of ASEA's redox technology on gene expression, immune function, cardiovascular health, endurance performance, and cellular repair — with consistently impressive results.</p>
-        <p>All ASEA products are certified safe by independent third-party testing and are produced in NSF-certified facilities, meeting the highest standards of quality and purity.</p>
-        <a href="https://www.aseaglobal.com/en-GB/science" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top: 8px;">View ASEA Research</a>
+        <p>Studies have examined the effects of ASEA's redox technology on gene expression, immune function, cardiovascular health, endurance performance, and cellular repair.</p>
+        <p>All ASEA products are produced in NSF-certified facilities, meeting the highest standards of quality and purity.</p>
+        <a href="https://www.aseaglobal.com/en-GB/science" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:8px;">View ASEA Research</a>
       </div>
     </div>
 
@@ -199,34 +131,33 @@
 </section>
 
 <!-- ── QUOTE ── -->
-<div class="quote-block">
-  <div class="quote-inner">
-    <p class="section-eyebrow">From the Founders</p>
-    <blockquote>Deeply inspired by the potential human impact of turning this technology into a supplement that could revolutionise well-being and support the energy and vitality of people everywhere, we knew we had to bring it to the world.</blockquote>
-    <cite>— Verdis Norton, ASEA Founder</cite>
+<section style="background:var(--bg2);text-align:center;padding:80px 0;">
+  <div class="container" style="max-width:720px;">
+    <span class="eyebrow">From the Founders</span>
+    <blockquote style="font-size:clamp(1.1rem,2vw,1.4rem);font-weight:300;color:var(--fg);line-height:1.6;font-style:italic;margin:16px 0 20px;">
+      "Deeply inspired by the potential human impact of turning this technology into a supplement that could revolutionise well-being and support the energy and vitality of people everywhere, we knew we had to bring it to the world."
+    </blockquote>
+    <cite style="font-size:0.875rem;color:var(--muted);font-style:normal;">— Verdis Norton, ASEA Founder</cite>
   </div>
-</div>
+</section>
 
-<!-- ── REDOX EXPLAINER ── -->
-<div class="redox-explainer">
-  <div class="redox-explainer-inner">
-    <p class="section-eyebrow">Why it matters</p>
-    <h2 class="section-title">The body's own healing intelligence</h2>
-    <p>Your body already knows how to heal itself. Redox signalling is the language your cells use to communicate — to detect damage, trigger repair, and maintain balance. When this language breaks down, your health suffers.</p>
-    <p>ASEA products don't introduce foreign substances. They speak the body's own language — reinforcing the natural communication systems that keep you feeling your best at every age.</p>
-    <a href="products.html" class="btn btn-primary" style="margin-top: 12px;">Explore the Products</a>
+<!-- ── CTA ── -->
+<section class="science-banner">
+  <div class="container" style="max-width:720px;text-align:center;">
+    <span class="eyebrow">Ready to experience it?</span>
+    <h2 class="section-title">Discover the products built on this science</h2>
+    <p class="section-sub">Every ASEA product speaks the body's own language — reinforcing the natural cellular communication that keeps you at your best.</p>
+    <a href="products.html" class="btn btn-outline-white btn-lg" style="margin-top:32px;">Explore Wellness Products</a>
   </div>
-</div>
+</section>
 
 <!-- ── FOOTER ── -->
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <div>
-        <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:32px;width:auto;" aria-label="ASEA">
-          <text x="0" y="30" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="#ffffff" letter-spacing="-1">ASEA</text>
-        </svg>
-        <p class="footer-brand-text">Science-led and people-powered. We exist to better people's lives and be a force for good in the world.</p>
+      <div class="footer-brand">
+        <img src="assets/asea-logo.svg" alt="ASEA" style="height:24px;width:auto;" />
+        <p>Science-led and people-powered. We exist to better people's lives and be a force for good in the world.</p>
       </div>
       <div class="footer-col">
         <h4>Wellness</h4>
@@ -247,20 +178,22 @@
         <a href="https://www.aseaglobal.com/en-GB/return-policy" target="_blank" rel="noopener">Return Policy</a>
         <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Privacy Notice</a>
         <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Cookie Policy</a>
+        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Legal Notice</a>
         <a href="https://www.aseaglobal.com/en-GB/contact" target="_blank" rel="noopener">Contact Us</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p class="footer-bottom-copy">&copy; 2025 ASEA, LLC. All rights reserved. Independent Associate – Renee Swain.</p>
-      <div class="footer-bottom-links">
+      <p class="footer-copy">&copy; 2025 ASEA, LLC. All rights reserved. Independent Associate – Renee Swain.</p>
+      <div class="footer-legal">
         <a href="https://www.aseaglobal.com/en-GB/return-policy" target="_blank" rel="noopener">Return Policy</a>
-        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Privacy</a>
-        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Legal</a>
+        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Privacy Notice</a>
+        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Legal Notice</a>
       </div>
     </div>
   </div>
 </footer>
 
 <script src="js/main.js"></script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
