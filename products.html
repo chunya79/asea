@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wellness Products – ASEA | Renee Swain</title>
+  <meta name="description" content="Explore ASEA's complete range of redox wellness products — supplements, gels, and skin care that support your body at a cellular level." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .product-full {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--color-border);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .product-full:last-child { border-bottom: none; }
+    .product-full.reverse { direction: rtl; }
+    .product-full.reverse > * { direction: ltr; }
+    .product-full-img {
+      border-radius: var(--radius-lg);
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem;
+    }
+    .product-full-text h2 {
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 800;
+      color: var(--color-primary);
+      margin-bottom: 8px;
+      line-height: 1.15;
+    }
+    .product-full-text .product-tagline {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--color-accent);
+      margin-bottom: 20px;
+    }
+    .product-full-text p {
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: 16px;
+    }
+    .product-benefits {
+      list-style: none;
+      margin: 20px 0 28px;
+    }
+    .product-benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.9rem;
+      color: var(--color-text);
+      margin-bottom: 10px;
+    }
+    .product-benefits li::before {
+      content: '';
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      margin-top: 2px;
+      background: var(--color-green);
+      border-radius: 50%;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 9l3.5 3.5L14 6' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-size: cover;
+    }
+    @media (max-width: 768px) {
+      .product-full { grid-template-columns: 1fr; gap: 32px; }
+      .product-full.reverse { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ── HEADER ── -->
+<header>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="ASEA Home">
+      <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <text x="0" y="30" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="#180D43" letter-spacing="-1">ASEA</text>
+      </svg>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-links">
+        <li>
+          <button class="nav-btn-link" aria-haspopup="true" aria-expanded="false">
+            Wellness
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown" role="menu">
+            <a href="#redox-gold" role="menuitem">REDOXGold™</a>
+            <a href="#asea-drink" role="menuitem">ASEA REDOX Drink</a>
+            <a href="#renu28" role="menuitem">RENU28 Redox Gel</a>
+            <a href="#renuadvanced" role="menuitem">RENUAdvanced Skin Care</a>
+          </div>
+        </li>
+        <li>
+          <button class="nav-btn-link" aria-haspopup="true" aria-expanded="false">
+            Science
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M3 5l4 4 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="dropdown" role="menu">
+            <a href="science.html#redox" role="menuitem">What is Redox?</a>
+            <a href="science.html#research" role="menuitem">Research &amp; Studies</a>
+            <a href="science.html#technology" role="menuitem">Our Technology</a>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="nav-right">
+      <a href="https://office.aseaglobal.com" class="nav-office-btn" target="_blank" rel="noopener">Virtual Office</a>
+    </div>
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<nav class="nav-mobile" id="nav-mobile" aria-label="Mobile navigation">
+  <div class="nav-mobile-section">
+    <div class="nav-mobile-section-title">Wellness</div>
+    <a href="#redox-gold">REDOXGold™</a>
+    <a href="#asea-drink">ASEA REDOX Drink</a>
+    <a href="#renu28">RENU28 Redox Gel</a>
+    <a href="#renuadvanced">RENUAdvanced Skin Care</a>
+  </div>
+  <div class="nav-mobile-section">
+    <div class="nav-mobile-section-title">Science</div>
+    <a href="science.html#redox">What is Redox?</a>
+    <a href="science.html#research">Research &amp; Studies</a>
+  </div>
+  <div class="nav-mobile-section">
+    <a href="about.html">About</a>
+    <a href="https://office.aseaglobal.com" target="_blank" rel="noopener">Virtual Office</a>
+  </div>
+</nav>
+
+<!-- ── PAGE HERO ── -->
+<div class="page-hero">
+  <p class="section-eyebrow">Wellness Products</p>
+  <h1 class="section-title">Feel better.<br>Live better.</h1>
+  <p class="section-sub">Science-backed redox products that work at the deepest cellular level — supporting your body from head to toe in ways that were previously unimaginable.</p>
+</div>
+
+<!-- ── PRODUCTS ── -->
+<section class="science-blocks">
+  <div class="container">
+
+    <!-- REDOXGold -->
+    <div class="product-full" id="redox-gold">
+      <div class="product-full-img" style="background: linear-gradient(135deg, #1a0a3d, #3a1a6b);">
+        <span>✨</span>
+      </div>
+      <div class="product-full-text">
+        <span class="section-eyebrow">New Release</span>
+        <h2>REDOXGold™</h2>
+        <p class="product-tagline">Bold technology. Pure gold. Rapid comfort.</p>
+        <p>REDOXGold™ combines next-generation redox technology with the power of pure gold to deliver rapid, cooling comfort wherever you need it most. A bold new chapter in redox innovation.</p>
+        <ul class="product-benefits">
+          <li>Next-generation redox signalling technology</li>
+          <li>Infused with pure gold for enhanced delivery</li>
+          <li>Rapid cooling comfort on application</li>
+          <li>Supports recovery and everyday wellness</li>
+        </ul>
+        <a href="https://www.aseaglobal.com/en-GB/redox-gold" target="_blank" rel="noopener" class="btn btn-primary">Shop REDOXGold™</a>
+      </div>
+    </div>
+
+    <!-- ASEA Drink -->
+    <div class="product-full reverse" id="asea-drink">
+      <div class="product-full-img" style="background: linear-gradient(135deg, #e8f4ff, #c5dcff);">
+        <span>💧</span>
+      </div>
+      <div class="product-full-text">
+        <span class="section-eyebrow">Bestseller</span>
+        <h2>ASEA REDOX Supplement Drink</h2>
+        <p class="product-tagline">The easiest way to feel great every day.</p>
+        <p>ASEA REDOX is the world's first and only supplement containing active redox signalling molecules — the same molecules that already exist in every cell of your body. It's safe, certified, and backed by 16+ years of scientific research.</p>
+        <ul class="product-benefits">
+          <li>Unique, patented redox signalling molecules</li>
+          <li>Supports immune function and vitality</li>
+          <li>Independently certified safe and pure</li>
+          <li>Suitable for daily use — for the whole family</li>
+        </ul>
+        <a href="https://www.aseaglobal.com/en-GB/asea" target="_blank" rel="noopener" class="btn btn-primary">Shop ASEA Drink</a>
+      </div>
+    </div>
+
+    <!-- RENU28 -->
+    <div class="product-full" id="renu28">
+      <div class="product-full-img" style="background: linear-gradient(135deg, #e8fff4, #c0fde2);">
+        <span>🌿</span>
+      </div>
+      <div class="product-full-text">
+        <span class="section-eyebrow">Topical Redox</span>
+        <h2>RENU28 Redox Gel</h2>
+        <p class="product-tagline">An all-body powerhouse gel.</p>
+        <p>RENU28 works at the cellular level to visibly revitalise your skin from the outside in. This breakthrough topical gel brings the power of redox signalling technology to every inch of your body — a first of its kind.</p>
+        <ul class="product-benefits">
+          <li>Visibly improves skin tone and texture</li>
+          <li>Works at the cellular level for deep renewal</li>
+          <li>Suitable for all skin types and all-body use</li>
+          <li>No harsh chemicals — pure redox technology</li>
+        </ul>
+        <a href="https://www.aseaglobal.com/en-GB/renu28" target="_blank" rel="noopener" class="btn btn-primary">Shop RENU28</a>
+      </div>
+    </div>
+
+    <!-- RENUAdvanced -->
+    <div class="product-full reverse" id="renuadvanced">
+      <div class="product-full-img" style="background: linear-gradient(135deg, #fff4e8, #ffdfc0);">
+        <span>🌸</span>
+      </div>
+      <div class="product-full-text">
+        <span class="section-eyebrow">Skin Care Range</span>
+        <h2>RENUAdvanced Skin Care</h2>
+        <p class="product-tagline">Science-powered beauty.</p>
+        <p>A complete skin care range powered by ASEA redox technology. RENUAdvanced works at the deepest cellular level to reduce the visible signs of ageing, improve elasticity, and leave your skin radiant, firm, and youthful.</p>
+        <ul class="product-benefits">
+          <li>Complete skin care system — cleanse, treat, protect</li>
+          <li>Powered by ASEA redox signalling technology</li>
+          <li>Clinically shown to improve skin appearance</li>
+          <li>Reduces fine lines and improves elasticity</li>
+        </ul>
+        <a href="https://shop.aseaglobal.com/?cat=89" target="_blank" rel="noopener" class="btn btn-primary">Shop RENUAdvanced</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── SCIENCE TEASER ── -->
+<section class="science-teaser">
+  <div class="container science-teaser-inner">
+    <p class="section-eyebrow">Why It Works</p>
+    <h2 class="section-title">Backed by real science</h2>
+    <p class="section-sub" style="margin: 0 auto 36px;">Every ASEA product is built on a foundation of peer-reviewed research and over 16 years of development. Discover the science of redox signalling.</p>
+    <a href="science.html" class="btn btn-primary">Explore the Science</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <svg viewBox="0 0 120 40" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:32px;width:auto;" aria-label="ASEA">
+          <text x="0" y="30" font-family="Inter, sans-serif" font-weight="800" font-size="28" fill="#ffffff" letter-spacing="-1">ASEA</text>
+        </svg>
+        <p class="footer-brand-text">Science-led and people-powered. We exist to better people's lives and be a force for good in the world.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Wellness</h4>
+        <a href="#redox-gold">REDOXGold™</a>
+        <a href="#asea-drink">ASEA REDOX Drink</a>
+        <a href="#renu28">RENU28 Redox Gel</a>
+        <a href="#renuadvanced">RENUAdvanced Skin Care</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About ASEA</a>
+        <a href="science.html">Science</a>
+        <a href="https://office.aseaglobal.com" target="_blank" rel="noopener">Virtual Office</a>
+        <a href="https://office.aseaglobal.com/Private/business/OrderTracking.aspx" target="_blank" rel="noopener">Track Your Order</a>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <a href="https://www.aseaglobal.com/en-GB/return-policy" target="_blank" rel="noopener">Return Policy</a>
+        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Privacy Notice</a>
+        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Cookie Policy</a>
+        <a href="https://www.aseaglobal.com/en-GB/contact" target="_blank" rel="noopener">Contact Us</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-bottom-copy">&copy; 2025 ASEA, LLC. All rights reserved. Independent Associate – Renee Swain.</p>
+      <div class="footer-bottom-links">
+        <a href="https://www.aseaglobal.com/en-GB/return-policy" target="_blank" rel="noopener">Return Policy</a>
+        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Privacy</a>
+        <a href="https://www.aseaglobal.com/en-GB/privacy-policy" target="_blank" rel="noopener">Legal</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
