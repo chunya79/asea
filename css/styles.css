@@ -524,15 +524,17 @@ section { padding: 80px 0; }
 
 /* ── DROPDOWN SECTION LABEL ── */
 .dropdown-label {
-  font-size: 0.65rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
-  color: var(--muted);
-  padding: 10px 16px 4px;
+  color: var(--asea-blue);
+  padding: 14px 16px 4px;
+  border-top: 1px solid var(--border);
+  margin-top: 4px;
   pointer-events: none;
 }
-.dropdown-label:first-child { padding-top: 4px; }
+.dropdown-label:first-child { padding-top: 6px; border-top: none; margin-top: 0; }
 
 /* ── HOW IT WORKS ── */
 .how-section { padding: 80px 0; background: var(--bg2); }
