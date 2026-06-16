@@ -280,7 +280,8 @@ section { padding: 80px 0; }
 .hero {
   background: #000;
   height: 100vh;
-  min-height: 600px;
+  min-height: 533px;
+  max-height: 900px;
   position: relative;
   overflow: hidden;
   display: flex;
@@ -292,13 +293,14 @@ section { padding: 80px 0; }
   position: absolute;
   inset: 0;
   z-index: 0;
+  overflow: hidden;
 }
 .hero-video-wrap iframe {
   position: absolute;
-  top: 0;
+  top: -13%;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 126%;
   pointer-events: none;
 }
 .hero-video-wrap::after {
