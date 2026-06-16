@@ -95,26 +95,22 @@
 </nav>
 
 <!-- ── HERO ── -->
-<section class="hero">
-  <!-- Video background – drop hero.mp4 into assets/ to activate -->
-  <div class="hero-video-wrap" id="hero-video-wrap" style="display:none;">
-    <video autoplay muted loop playsinline>
-      <source src="assets/hero.mp4" type="video/mp4" />
-    </video>
+<section class="hero hero-video">
+  <div class="hero-video-wrap">
+    <iframe src="https://player.vimeo.com/video/1053445351?autoplay=1&muted=1&loop=1&background=1&quality=1080p"
+      frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
+      title="ASEA Hero"></iframe>
   </div>
 
   <div class="hero-inner">
     <div class="hero-text">
-      <span class="eyebrow">Now Available</span>
-      <h1>Go bold.<br><strong>Get gold.</strong></h1>
-      <p>REDOXGold™ harnesses the power of next-generation redox technology and pure gold for rapid, cooling comfort.</p>
+      <span class="eyebrow" style="color:rgba(255,255,255,0.8);">Now Available</span>
+      <h1 style="color:#fff;">Go bold.<br><strong>Get gold.</strong></h1>
+      <p style="color:rgba(255,255,255,0.9);">REDOXGold™ harnesses the power of next-generation redox technology and pure gold for rapid, cooling comfort.</p>
       <div class="hero-btns">
         <a href="products.html#redox-gold" class="btn btn-primary btn-lg">Get REDOXGold</a>
-        <a href="products.html" class="btn btn-outline-dark btn-lg">Explore Wellness</a>
+        <a href="products.html" class="btn btn-outline-white btn-lg">Explore Wellness</a>
       </div>
-    </div>
-    <div class="hero-img">
-      <img src="assets/redoxgold-1.jpg" alt="REDOXGold product" style="width:100%;max-width:460px;height:420px;object-fit:cover;border-radius:8px;" />
     </div>
   </div>
 </section>
@@ -256,16 +252,6 @@
 </footer>
 
 <script src="js/main.js"></script>
-<script>
-  // Lucide icons
-  lucide.createIcons();
-  // Show video wrapper only if video file exists
-  const vid = document.querySelector('#hero-video-wrap video');
-  if (vid) {
-    vid.addEventListener('loadeddata', () => {
-      document.getElementById('hero-video-wrap').style.display = 'block';
-    });
-  }
-</script>
+<script>lucide.createIcons();</script>
 </body>
 </html>
