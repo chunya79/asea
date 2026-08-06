@@ -871,3 +871,7 @@ footer {
   .stats-strip-inner { grid-template-columns: 1fr 1fr; }
   .hero-btns { flex-direction: column; }
 }
+/* About page grids */
+.about-purpose-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:80px}
+.about-guide-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;max-width:600px;margin:40px auto 0;padding:32px;background:var(--bg2);border-radius:var(--r-lg)}
+@media(max-width:700px){.about-purpose-grid{grid-template-columns:1fr;margin-bottom:56px}.about-purpose-grid>div{padding:28px!important}.about-guide-grid{grid-template-columns:1fr;gap:22px;padding:28px}}
